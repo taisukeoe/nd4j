@@ -32,19 +32,19 @@ public class JCudaFftTest {
 
 
 
-    @Test
-    public void testOnes() {
-        Nd4j.EPS_THRESHOLD = 1e-1;
-        IComplexNDArray ones = Nd4j.complexOnes(5, 5);
-        IComplexNDArray ffted = instance.fftn(ones);
-        IComplexNDArray zeros = Nd4j.createComplex(5, 5);
-        zeros.putScalar(0, 0, Nd4j.createComplexNumber(25, 0));
-        assertEquals(zeros, ffted);
-
-
-
-
-    }
+//    @Test
+//    public void testOnes() {
+//        Nd4j.EPS_THRESHOLD = 1e-1;
+//        IComplexNDArray ones = Nd4j.complexOnes(5, 5);
+//        IComplexNDArray ffted = instance.fftn(ones);
+//        IComplexNDArray zeros = Nd4j.createComplex(5, 5);
+//        zeros.putScalar(0, 0, Nd4j.createComplexNumber(25, 0));
+//        assertEquals(zeros, ffted);
+//
+//
+//
+//
+//    }
 
 
 
